@@ -7,4 +7,3 @@ minikube stop
 minikube status  
 minikube addons list  
 minikube dashboard  
-
