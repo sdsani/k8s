@@ -1,10 +1,10 @@
 #### Links
-https://minikube.sigs.k8s.io/docs/start/
+https://minikube.sigs.k8s.io/docs/start/  
 
 #### Commands
-minikube start
-minikube stop
-minikube status
-minikube addons list
-minikube dashboard
+minikube start  
+minikube stop  
+minikube status  
+minikube addons list  
+minikube dashboard  
 
