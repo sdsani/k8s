@@ -5,6 +5,7 @@
 | https://www.youtube.com/watch?v=gcz5VsvOYmI  | The Hitchhiker's Guide to Pod Security - Lachlan Evenson, Microsoft|
 | https://www.youtube.com/watch?v=v6a37uzFrCw  | Kubernetes security best practice by Ian Lewis|
 | https://kubernetes.io/docs/tutorials/security/ns-level-pss/| Example |
+| https://www.appvia.io/blog/podsecuritypolicy-is-dead-long-live| Another good article on PSS |
 
 ## Keep in mind
 1. Applied at name space level 
