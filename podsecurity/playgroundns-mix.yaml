@@ -3,8 +3,10 @@ kind: Namespace
 metadata:
   labels:
     kubernetes.io/metadata.name: playground
+    pod-security.kubernetes.io/enforce: privileged
     pod-security.kubernetes.io/warn: baseline
     pod-security.kubernetes.io/warn-version: v1.25
+    pod-security.kubernetes.io/audit: baseline
   name: playground
 status:
   phase: Active

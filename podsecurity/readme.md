@@ -4,6 +4,7 @@
 | https://github.com/bmuschko/cks-crash-course | CKS Crash Cource material                | 
 | https://www.youtube.com/watch?v=gcz5VsvOYmI  | The Hitchhiker's Guide to Pod Security - Lachlan Evenson, Microsoft|
 | https://www.youtube.com/watch?v=v6a37uzFrCw  | Kubernetes security best practice by Ian Lewis|
+| https://kubernetes.io/docs/tutorials/security/ns-level-pss/| Example |
 
 ## Keep in mind
 1. Applied at name space level 
@@ -17,7 +18,7 @@
 1. Modes available are enforce, audit, warn. https://kubernetes.io/docs/concepts/security/pod-security-admission/  
 1. Feature is turned on starting 1.23  
 
-## Sample labesl to apply to a namespace
+## Sample labels to apply to a namespace
 pod-security.kubernetes.io/<MODE>-version:<level>   (k8s version is optional and default value is latest)
 
 ## Commands used  
@@ -29,4 +30,6 @@ pod-security.kubernetes.io/<MODE>-version:<level>   (k8s version is optional and
 | kubectl -n kubect-system exec \ <br>kube-apiserver-control-plane -it \ <br> -- kube-apiserver -h \| grep \ <br> "default enabled ones"| Check status of the Pod security feature|
 | kubectl apply -f playgroundns-warn-basel.yaml        ||
 | kubectl apply -f priviliged-pod.yaml -n playground   ||
+| kubectl apply -f priviliged-pod.yaml --dry-run=server||
+| kubectl get --raw /metrics | grep pod_security_evaluations_total|What voilations we are hitting and how many times|
 
